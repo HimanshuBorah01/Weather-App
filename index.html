@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-widget">
+        <div class="search-box">
+            <input class="input" type="text" placeholder="Search location">
+            
+            <button class="search-btn" title="Search"> <!--btn-->
+                <i class="fa-solid fa-magnifying-glass fa-xl search-icon"></i>
+            </button>
+        </div>
+
+        <div class="weather-icon">
+             <img  id="disply-weather-icon" src=""  alt="Weather Icon">
+             <br>
+             <span id="disply-condition">No Data</span>
+        </div>
+
+        <div class="temperature">
+            <h1 id="disply-temp">0℃</h1>
+            <p id="disply-City">City</p>
+        </div>
+
+        <div class="details">
+            <div class="detail-item">
+                <i class="fa-solid fa-smog"></i>
+                <p id="disply-Humidity">0%<br></p>
+                <span>Humidity</span>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-wind"></i> 
+                <p id="disply-windspeed">0km/h<br></p>
+                <span>Wind Speed</span>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
